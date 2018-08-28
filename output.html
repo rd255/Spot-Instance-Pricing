@@ -1,0 +1,41 @@
+<h1 align='center'>AGAM Capital</h1>
+
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript" src="chartdrawergooglesheet.js"> </script>
+
+<label>Select Instance Type : </label>
+<br/>
+<select id="Type" name="Type" onchange="drawChart()">
+<option value="General Purpose" selected>General Purpose</option>
+<option value="Accelerated Computig">Accelerated Computig</option>
+<option value="Compute Optimized">Compute Optimized</option>
+<option value="Memory Optimized">Memory Optimized</option>
+<option value="Storage Optimized">Storage Optimized</option>
+</select>
+
+<p/>
+<label>Select Region : </label>
+<br/>
+<select id="Region" name="Region" onchange="drawChart()">
+<option value="ap-northeast-2">ap-northeast-2</option>
+<option value="ap-northeast-3">ap-northeast-3</option>
+<option value="ap-south-1">ap-south-1</option>
+<option value="apac-sin">apac-sin</option>
+<option value="apac-syd">apac-syd</option>
+<option value="apac-tokyo">apac-tokyo</option>
+<option value="ca-central-1">ca-central-1</option>
+<option value="eu-central-1">eu-central-1</option>
+<option value="eu-ireland">eu-ireland</option>
+<option value="eu-west-2">eu-west-2</option>
+<option value="eu-west-3">eu-west-3</option>
+<option value="sa-east-1">sa-east-1</option>
+<option value="us-east">us-east</option>
+<option value="us-east-2">us-east-2</option>
+<option value="us-west" selected>us-west</option>
+<option value="us-west-2">us-west-2</option>
+
+</select>
+<div id="chart_div" ></div>
+</body>
+</html>
